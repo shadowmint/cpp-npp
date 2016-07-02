@@ -17,7 +17,7 @@ set(required_features
     cxx_auto_type)
 
 # Warnings~
-include(${CMAKE_CURRENT_SOURCE_DIR}/sugar/cmake/Sugar)
+include(${CMAKE_CURRENT_SOURCE_DIR}/.sugar/cmake/Sugar)
 include(sugar_generate_warning_flags)
 sugar_generate_warning_flags(
   flags
@@ -28,14 +28,14 @@ sugar_generate_warning_flags(
   CLEAR_GLOBAL)
 
 # Library / executable if any
-file(GLOB_RECURSE SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/npp/*.cpp)
+file(GLOB_RECURSE SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/npp/*.cpp)
 add_library(npp STATIC ${SOURCES})
 target_compile_features(npp PRIVATE ${required_features})
 set_target_properties(npp PROPERTIES ${properties} COMPILE_OPTIONS "${flags}")
 
 # Local tests
 enable_testing()
-add_executable(tests "${CMAKE_CURRENT_SOURCE_DIR}/tests/tests.cpp")
+add_executable(tests "${CMAKE_CURRENT_SOURCE_DIR}/src/tests/tests.cpp")
 target_compile_features(tests PRIVATE ${required_features})
 set_target_properties(tests PROPERTIES ${properties} COMPILE_OPTIONS "${flags}")
 target_link_libraries(tests npp)

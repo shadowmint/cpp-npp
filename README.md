@@ -13,6 +13,6 @@ From your unreal project folder:
 
     mkdir build
     cd build
-    cmake ../src
+    cmake ..
     cmake --build .
     ctest
