@@ -9,7 +9,8 @@
   },
   "files": [
     "index.js",
-    "scripts",
+    ".sugar",
+    "CMakeLists.txt",
     "src"
   ],
   "author": "douglas.linder@gmail.com",
