@@ -11,7 +11,8 @@
     "index.js",
     ".sugar",
     "CMakeLists.txt",
-    "src"
+    "src",
+    "tests"
   ],
   "author": "douglas.linder@gmail.com",
   "license": "MIT",
