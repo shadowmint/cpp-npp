@@ -1,5 +1,5 @@
-#include "../npp/log/ConsoleLog.h"
-#include "../npp/tests/NppTestRunner.h"
+#include "../src/npp/log/ConsoleLog.h"
+#include "../src/npp/tests/NppTestRunner.h"
 
 using npp::ConsoleLog;
 
