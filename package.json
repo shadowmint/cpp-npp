@@ -1,0 +1,21 @@
+{
+  "name": "cpp-npp",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shadowmint/cpp-npp.git"
+  },
+  "files": [
+    "index.js",
+    "scripts",
+    "src"
+  ],
+  "author": "douglas.linder@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shadowmint/cpp-npp/issues"
+  },
+  "homepage": "https://github.com/shadowmint/cpp-npp"
+}
