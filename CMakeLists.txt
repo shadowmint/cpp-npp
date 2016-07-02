@@ -25,7 +25,6 @@ sugar_generate_warning_flags(
   properties
   ENABLE ALL
   DISABLE c++98-compat padded
-  TREAT_AS_ERROR ALL
   CLEAR_GLOBAL)
 
 # Library / executable if any

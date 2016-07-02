@@ -1,6 +1,7 @@
 #include "./TestPath.h"
 #include "../Path.h"
 #include "../OS.h"
+#include "../internal/Format.h"
 #include <string.h>
 
 using npp::Path;

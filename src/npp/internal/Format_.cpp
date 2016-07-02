@@ -77,5 +77,13 @@ std::string Substr(const std::string &text, u32 offset) {
   return text.substr(offset, text.length() - offset);
 }
 
+/// Create a substring from offset -> offset + length
+std::string Substr(const std::string &text, u32 offset, u32 length) {
+  if ((length - offset) > 0) {
+    return text.substr(offset, length - offset);
+  }
+  return "";
+}
+
 }  // namespace str
 }  // namespace npp

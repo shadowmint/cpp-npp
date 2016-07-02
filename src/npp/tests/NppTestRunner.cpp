@@ -6,7 +6,6 @@
 #include "../tests/TestResult.h"
 #include "../Unique.h"
 #include "./NppTestRunner.h"
-#include <stdio.h>
 
 using npp::make_unique;
 

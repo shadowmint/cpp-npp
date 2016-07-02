@@ -7,6 +7,9 @@
 
 #if NPP_WIN
 #include <windows.h>
+#ifdef ReplaceFile
+#undef ReplaceFile
+#endif
 #else
 #include <limits.h>
 #include <stdlib.h>
@@ -41,8 +44,8 @@ void Path::SplitPath(std::string raw) {
   // Look for a drive
   if (raw.length() >= 2) {
     if (raw[1] == ':') {
+      drive = Some<string>(npp::str::Substr(raw, 0, 1));
       raw = npp::str::Substr(raw, 2);
-      drive = Some<string>(npp::str::String(&raw[0]));
     }
   }
 

@@ -1,7 +1,6 @@
 #pragma once
 
 #include <functional>
-#include <stdio.h>
 #include <vector>
 #include "../Log.h"
 

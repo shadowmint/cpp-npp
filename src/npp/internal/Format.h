@@ -55,6 +55,9 @@ bool EndsWith(const std::string &text, std::string query);
 /// Create a substring from offset -> end
 std::string Substr(const std::string &text, u32 offset);
 
+/// Create a substring from offset -> offset + length
+std::string Substr(const std::string &text, u32 offset, u32 length);
+
 } // Namespace str
 
 } // namespace npp
